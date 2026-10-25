@@ -1,31 +1,31 @@
 {
   "active": true,
-  "hostname": "iyembud-4",
+  "hostname": "rdpfree-5",
   "os": "Microsoft Windows Server 2025 Datacenter",
   "os_build": "10.0.26100",
   "os_style": "Native Windows",
   "hardware": {
-    "cpu_threads": 4,
     "disk_free_gb": 29.9,
-    "ram_gb": 16.0
+    "ram_gb": 16.0,
+    "cpu_threads": 4
   },
   "rdp_port": 3389,
   "rdp_user": "xyadmin",
   "rdp_listen": ":::3389 (svchost) | 0.0.0.0:3389 (svchost) + handshake ok via 127.0.0.1",
   "rdp_denyts": true,
-  "started_at": "2026-10-25T08:21:07Z",
-  "expires_at": "2026-10-25T14:03:07Z",
+  "started_at": "2026-10-25T08:48:39Z",
+  "expires_at": "2026-10-25T14:30:39Z",
   "duration_menit": 342,
-  "run_id": "40176205104",
+  "run_id": "40177782982",
   "run_attempt": "1",
-  "run_number": "4",
-  "run_url": "https://github.com/edzzn60-cloud/newrdpXy/actions/runs/40176205104",
+  "run_number": "5",
+  "run_url": "https://github.com/edzzn60-cloud/newrdpXy/actions/runs/40177782982",
   "mode": "bersih+win10",
   "persist": {
-    "files": 68,
     "profile": "C:\\Users\\xyadmin",
     "restored": true,
-    "source": "xyrdp-state.7z.enc"
+    "source": "xyrdp-state.7z.enc",
+    "files": 59
   },
   "storage": {
     "boost": "skip",
@@ -46,39 +46,47 @@
     "verification": "Login ulang, aktifkan mic di XyDesk dan izinkan Android. Uji Windows Settings > Sound > Input; kebijakan aktif bukan bukti capture end-to-end."
   },
   "grafis": {
-    "mesa": "26.2.4",
-    "vulkan": "lavapipe 1.3 (CPU)",
     "adapters": "Microsoft Hyper-V Video",
+    "opengl": "4.6 (Mesa llvmpipe system-wide x64/x86 + OpenGL ES 3.2)",
+    "vulkan": "lavapipe 1.3 (CPU)",
     "mode": "software",
-    "path": "C:\\XyRDP\\grafis\\mesa-x64",
-    "opengl": "4.6 (Mesa llvmpipe system-wide x64/x86 + OpenGL ES 3.2)"
+    "mesa": "26.2.4",
+    "path": "C:\\XyRDP\\grafis\\mesa-x64"
   },
   "samp": {
-    "silentpatch": false,
-    "vc2013_x64": true,
-    "directx9": true,
-    "webview2": true,
-    "vc2015_x64": true,
-    "directplay": true,
     "vc2015_x86": true,
-    "dgvoodoo_d3d9": true,
-    "vc2013_x86": true,
-    "dep_optin": true,
+    "silentpatch": false,
+    "directplay": true,
     "status": "runtimes-2026-ready",
+    "dgvoodoo_d3d9": true,
+    "webview2": true,
+    "vc2013_x86": true,
+    "vc2015_x64": true,
+    "vc2013_x64": true,
+    "fullscreen": true,
     "samp_client": true,
-    "fullscreen": true
+    "directx9": true,
+    "dep_optin": true
   },
   "games": {
+    "blender": {
+      "status": "ready",
+      "launcher": "C:\\Games\\Blender\\Launch-Blender.ps1"
+    },
+    "fivem": {
+      "status": true,
+      "sound": true
+    },
     "memu": {
       "status": "ready",
       "launcher": "C:\\Games\\MEmu\\Launch-MEmu.ps1"
     },
     "minecraft_java": {
       "status": "ready",
-      "tlauncher_jar": true,
       "opengl46": true,
-      "prismlauncher": true,
-      "official_exe": true
+      "tlauncher_jar": true,
+      "official_exe": true,
+      "prismlauncher": true
     },
     "roblox": {
       "status": "ready-antivm",
@@ -87,19 +95,11 @@
     "ets2": {
       "status": "ready",
       "launcher": "C:\\Games\\ETS2\\Launch-ETS2-Free.ps1"
-    },
-    "fivem": {
-      "status": true,
-      "sound": true
-    },
-    "blender": {
-      "status": "ready",
-      "launcher": "C:\\Games\\Blender\\Launch-Blender.ps1"
     }
   },
   "tools_hub": {
-    "installed": true,
     "exe": "C:\\XyRDP\\tools\\XyDeskDashboard.exe",
+    "installed": true,
     "auto_start": true
   },
   "xydesk": {
@@ -121,21 +121,21 @@
   },
   "akses": {
     "tailscale": {
-      "hostname": "iyembud-4",
+      "ip": "100.83.160.31",
       "note": "HP/PC harus login Tailscale pada tailnet yang sama. TCP 3389 harus diizinkan ACL.",
       "status": "ok",
-      "ip": "100.90.235.39",
-      "magicdns": "iyembud-4.tail85b74c.ts.net."
+      "hostname": "rdpfree-5",
+      "magicdns": "rdpfree-5.tail85b74c.ts.net."
     },
+    "mode": "tailscale",
     "tunnel": {
-      "host": "100.90.235.39",
-      "outside": "tailscale",
+      "status": "ok",
+      "host": "100.83.160.31",
+      "address": "100.83.160.31:3389",
       "selftest": "ok",
-      "address": "100.90.235.39:3389",
       "port": 3389,
-      "status": "ok"
-    },
-    "mode": "tailscale"
+      "outside": "tailscale"
+    }
   },
   "extras": {
     "discord": "ok"
