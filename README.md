@@ -1,6 +1,4 @@
-# RdpFree
-
-Dashboard: **https://rdpfree.projectkal.my.id** · Credit: **KallAncrit**
+# Rdp
 
 Windows RDP melalui **Tailscale privat**, dengan dashboard Next.js/Cloudflare dan integrasi API native XyDesk Remote. Tidak ada Pinggy, bore, ngrok, Serveo, localhost.run, Funnel, atau relay publik pada workflow aktif.
 
