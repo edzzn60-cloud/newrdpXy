@@ -17,7 +17,7 @@ on:
       rdp_user:
         description: 'Username RDP (3–20 karakter)'
         required: false
-        default: 'xyadmin'
+        default: 'dzennn'
         type: string
       akses:
         description: 'Jalur akses privat ke RDP'
