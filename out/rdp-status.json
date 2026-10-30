@@ -1,6 +1,6 @@
 {
   "active": true,
-  "hostname": "rdpfree-23",
+  "hostname": "rdpfree-24",
   "os": "Microsoft Windows Server 2025 Datacenter",
   "os_build": "10.0.26100",
   "os_style": "Native Windows",
@@ -13,19 +13,19 @@
   "rdp_user": "xyadmin",
   "rdp_listen": ":::3389 (svchost) | 0.0.0.0:3389 (svchost) + handshake ok via 127.0.0.1",
   "rdp_denyts": true,
-  "started_at": "2026-10-30T12:33:45Z",
-  "expires_at": "2026-10-30T18:15:45Z",
+  "started_at": "2026-10-30T18:18:16Z",
+  "expires_at": "2026-10-31T00:00:16Z",
   "duration_menit": 342,
-  "run_id": "41056158658",
+  "run_id": "41105640596",
   "run_attempt": "1",
-  "run_number": "23",
-  "run_url": "https://github.com/edzzn60-cloud/newrdpXy/actions/runs/41056158658",
+  "run_number": "24",
+  "run_url": "https://github.com/edzzn60-cloud/newrdpXy/actions/runs/41105640596",
   "mode": "bersih+win10",
   "persist": {
-    "source": "xyrdp-state.7z.enc",
     "files": 69,
-    "profile": "C:\\Users\\xyadmin",
-    "restored": true
+    "restored": true,
+    "source": "xyrdp-state.7z.enc",
+    "profile": "C:\\Users\\xyadmin"
   },
   "storage": {
     "boost": "skip",
@@ -46,55 +46,55 @@
     "audio_output": "rdp_playback_enabled"
   },
   "grafis": {
+    "mode": "software",
     "path": "C:\\XyRDP\\grafis\\mesa-x64",
     "vulkan": "lavapipe 1.3 (CPU)",
-    "mode": "software",
     "mesa": "26.2.5",
     "adapters": "Microsoft Hyper-V Video",
     "opengl": "4.6 (Mesa llvmpipe system-wide x64/x86 + OpenGL ES 3.2)"
   },
   "samp": {
-    "vc2013_x64": true,
-    "status": "runtimes-2026-ready",
-    "directplay": true,
-    "vc2015_x64": true,
-    "silentpatch": false,
-    "vc2015_x86": true,
-    "directx9": true,
-    "webview2": true,
-    "dgvoodoo_d3d9": true,
     "dep_optin": true,
-    "fullscreen": true,
+    "vc2015_x64": true,
+    "samp_client": true,
     "vc2013_x86": true,
-    "samp_client": true
+    "status": "runtimes-2026-ready",
+    "dgvoodoo_d3d9": true,
+    "vc2013_x64": true,
+    "silentpatch": false,
+    "webview2": true,
+    "vc2015_x86": true,
+    "directplay": true,
+    "fullscreen": true,
+    "directx9": true
   },
   "games": {
-    "ets2": {
-      "launcher": "C:\\Games\\ETS2\\Launch-ETS2-Free.ps1",
+    "fivem": {
+      "sound": true,
+      "status": true
+    },
+    "minecraft_java": {
+      "tlauncher_jar": true,
+      "prismlauncher": true,
+      "official_exe": true,
+      "status": "ready",
+      "opengl46": true
+    },
+    "roblox": {
+      "launcher": "C:\\Games\\Roblox\\Launch-Roblox-AntiVM.ps1",
+      "status": "ready-antivm"
+    },
+    "blender": {
+      "launcher": "C:\\Games\\Blender\\Launch-Blender.ps1",
       "status": "ready"
     },
     "memu": {
       "launcher": "C:\\Games\\MEmu\\Launch-MEmu.ps1",
       "status": "ready"
     },
-    "blender": {
-      "launcher": "C:\\Games\\Blender\\Launch-Blender.ps1",
+    "ets2": {
+      "launcher": "C:\\Games\\ETS2\\Launch-ETS2-Free.ps1",
       "status": "ready"
-    },
-    "roblox": {
-      "launcher": "C:\\Games\\Roblox\\Launch-Roblox-AntiVM.ps1",
-      "status": "ready-antivm"
-    },
-    "minecraft_java": {
-      "status": "ready",
-      "opengl46": true,
-      "official_exe": true,
-      "prismlauncher": true,
-      "tlauncher_jar": true
-    },
-    "fivem": {
-      "sound": true,
-      "status": true
     }
   },
   "extras": {
@@ -107,8 +107,8 @@
   },
   "tools_hub": {
     "exe": "C:\\XyRDP\\tools\\XyDeskDashboard.exe",
-    "auto_start": true,
-    "installed": true
+    "installed": true,
+    "auto_start": true
   },
   "xydesk": {
     "host": "ok",
@@ -128,20 +128,20 @@
     "note": "Host siap dipakai klien XyDesk Remote mode Koneksi RDP (Host+Port tunnel). Kunci WinStations\\RDP-Tcp sengaja TIDAK ditulis supaya listener 3389 tidak mati di runner GitHub."
   },
   "akses": {
-    "tunnel": {
-      "status": "ok",
-      "address": "100.98.48.119:3389",
-      "outside": "tailscale",
-      "selftest": "ok",
-      "host": "100.98.48.119",
-      "port": 3389
-    },
     "tailscale": {
+      "magicdns": "rdpfree-24.tail85b74c.ts.net.",
+      "ip": "100.100.118.79",
+      "hostname": "rdpfree-24",
       "status": "ok",
-      "hostname": "rdpfree-23",
-      "ip": "100.98.48.119",
-      "note": "HP/PC harus login Tailscale pada tailnet yang sama. TCP 3389 harus diizinkan ACL.",
-      "magicdns": "rdpfree-23.tail85b74c.ts.net."
+      "note": "HP/PC harus login Tailscale pada tailnet yang sama. TCP 3389 harus diizinkan ACL."
+    },
+    "tunnel": {
+      "outside": "tailscale",
+      "status": "ok",
+      "host": "100.100.118.79",
+      "port": 3389,
+      "selftest": "ok",
+      "address": "100.100.118.79:3389"
     },
     "mode": "tailscale"
   }
